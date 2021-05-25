@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang = en>
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="Assignment02.js">
+      </head>
+    
+    <body>
+        <div class="container">
+            <h1 class="text-center mt-4">BMI</h1>
+            <form class="form-horizontal" action="/action_page.php">
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="Sotienvay">Số tiền vay</label>
+                <div class="col-sm-4">
+                  <input type="Sotienvay" class="form-control" id="Sotienvay" placeholder="VND" name="Sotienvay">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="tgv">Thời gian vay</label>
+                <div class="col-sm-4">          
+                  <input type="Thời gian vay" class="form-control" id="tgv" placeholder="Tháng" name="tgv">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="ls">Lãi suất</label>
+                <div class="col-sm-4">          
+                  <input type="Lão suất" class="form-control" id="ls" placeholder="% năm" name="ls">
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="form-group">
+                    <label class="form-label">Ngày giải ngân: </label>
+                    <input id="disbursementDate" type="date" class="form-input" placeholder="mm/DD/yyyy">
+                    <span class="ml-2 unit-label"><i class="far fa-calendar-alt"></i></span>
+                </div>
+            </div>
+            <button class="btn btn-success" id="calculate">Tính</button>
+              </div>
+              <div class="row mt-4 mb-4">
+                <h1 class="title text-primary mb-4 pt-4 pb-2">Kết quả</h1>
+                <table id="tableResult" class="table table-striped">
+                    <thead class=" bg-success text-light">
+                        <tr>
+                            <th scope="col" colspan="2">Kỳ trả nợ</th>
+                            <th scope="col">Số gốc còn lại</th>
+                            <th scope="col">Gốc</th>
+                            <th scope="col">Lãi</th>
+                            <th scope="col">Tổng gốc + lãi</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+                        <tr>
+                            <!-- <td id="notification" colspan="6"><h2  class="text-center text-dark" >Thực hiện phép tính để có dữ liệu</h2></td> -->
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </form>
+          </div>
+    </body>
+</html>
